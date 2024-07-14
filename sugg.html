@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(pink,#fff);
+        }
+        .contain{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 350px;
+        }
+        .contain h1{
+            font-size: 40px;
+            text-align: center;
+            margin: 40px 0;
+            font-weight: 600;
+            color: blueviolet;
+        }
+        .contain input{
+            font-size: 16px;
+            padding: 15px 10px;
+            width: 100%;
+            border: 0;
+            border-radius: 25px;
+            font-family: serif;
+
+        }
+        .contain textarea{
+            font-size: 16px;
+            padding: 15px 10px;
+            width: 100%;
+            border: 0;
+            border-radius: 20px;
+
+        }
+        .contain button{
+            font-size: 15px;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 10px 15px;
+            width: 50%;
+            border-radius: 25px;
+            color: black;
+            cursor: pointer;
+
+        }
+        
+        @media (max-width:800px){
+            .contain input{
+                width: 60vw;
+            }
+        }
+        @media (max-width:800px){
+            .contain textarea{
+                width: 60vw;
+            }
+        }
+            @media (max-width:600px){
+            .contain input{
+                width: 80vw;
+            }
+        }
+        @media (max-width:600px){
+            .contain textarea{
+                width: 80vw;
+            }
+        }
+    
+    </style>
+     <h2 ><a href="index.html">&#127968;HOME</a></h2>
+    <div class="contain">
+       
+        <h1>Your Feedback Is Important For Us</h1>
+    
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="2da8949b-b6f8-4e3b-bfc1-b075e44dbfdf" >
+        
+        <input type="text" name="name"    placeholder=" Enter your Name" class="name" required>
+        <br>
+        <br>
+        <input type="email" placeholder="Enter your Email" class=" email" name="email" required>
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Staff  Name" class="name" required>
+        <br>
+        <br>
+        <textarea name="message" placeholder=" Enter your feedback"  class="message" required></textarea>
+        <button type="submit" >Submit</button>
+        </form>
+    </div>
+</body>
+</html>
